@@ -1,0 +1,38 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Recipe App</h1>
+            <h2>Make your own recipe with your own style </h2>
+        </div>
+    </header>
+        <div class="actions">
+            <div class="actions__container">
+                <input id="search-text" type="text" class="input" placeholder="Search Recipe">
+                <select id="filter-by" class="dropdown">
+                    <option value="byEdited">Sort by last edited</option>
+                    <option value="byCreated">Sort by recently created</option>
+                    <option value="alphabetical">Sort alphabetically</option>
+                </select>
+            </div>
+        </div>
+        <div class="container">
+            <div id="recipes"></div>
+            <button id="create-recipe" class="button">Create Recipe</button>
+        </div>  
+
+
+    <script src="./scripts/uuidv4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
+    <script src="./scripts/recipe-funcions.js"></script>
+    <script src="./scripts/recipe-app.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <h1>Recipe App</h1>
+            <h2>Make your own recipe with your own style </h2>
+        </div>
+    </div>
+    <div>
+        <div>
+            <a href="./index.html">Home</a>
+            <span id="last-updated"></span>
+        </div>
+    </div>
+    <div class="container">
+        <input id="recipe-title" placeholder="Recipe Name">
+        <br>
+        <textarea id="recipe-body" placeholder="Enter the steps for your recipe"></textarea>
+        <br>     
+        </div>
+        <div class="container">
+            <h2>Ingredients</h2>
+            <div id="list_ingredients"></div>
+            <form id="new-ingredient">
+                <input id="input" type="text" placeholder="Add ingredient" name="text">
+                <button class="btn">Add</button>
+            </form>
+        </div>
+        <br>
+        <button id="delete-recipe">Delete Recipe</button>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
+    <script src="./scripts/uuidv4.js"></script>
+    <script src="./scripts/recipe-funcions.js"></script>
+    <script src="./scripts/recipe-details.js"></script>
+    
+</body>
+</html>
